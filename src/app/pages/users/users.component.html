@@ -1,7 +1,7 @@
-<ul class="list-button">
-    @for (user of users; track $index) {
-      <li class="mb-2">
-        <button [routerLink]="'/users/details'" [queryParams]="{username: user}"  class="btn btn-primary"> {{user}} </button>
-      </li>
-    }
-</ul>
+<div class="row">
+  @for (username of user; track $index) {
+    <div class="col-md">
+      <app-user-card [user]="username"></app-user-card>
+    </div>
+  }
+</div>
