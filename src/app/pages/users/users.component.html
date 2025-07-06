@@ -1,7 +1,7 @@
-<ul>
-    @for (item of users; track $index) {
-        <li>
-            {{item}}
-        </li>
+<ul class="list-button">
+    @for (user of users; track $index) {
+      <li class="mb-2">
+        <button [routerLink]="'/users/details'" [queryParams]="{username: user}"  class="btn btn-primary"> {{user}} </button>
+      </li>
     }
 </ul>
