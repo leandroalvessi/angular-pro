@@ -5,10 +5,11 @@ import { HomeComponent } from "./pages/home/home.component";
 import { FooterComponent } from "./components/footer/footer.component";
 import { BaseUiComponent } from "./components/base-ui/base-ui.component";
 import { UsersComponent } from "./pages/users/users.component";
+import { ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NavbarComponent, FooterComponent, BaseUiComponent],
+  imports: [RouterOutlet, NavbarComponent, FooterComponent, BaseUiComponent, ReactiveFormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
