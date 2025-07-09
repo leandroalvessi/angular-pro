@@ -24,7 +24,7 @@ export class UsersComponent implements OnInit {
 
  initilizeForm() {
   this.userForm = this.fb.group({
-    nome: ['', [Validators.required, Validators.maxLength(250)]],
+    nome: ['', [Validators.required, Validators.maxLength(50)]],
     idade: ['', [Validators.required, Validators.min(10), Validators.max(110)]],
   })
  }
